@@ -5,9 +5,9 @@ This project demonstrates the difference between `System.out.print()` and `Syste
 
 ## 🚀 Task Requirements
 The application must satisfy the following criteria:
-1.  Print the first phrase: **"Я учу Java."**
-2.  Print the second phrase: **"Это интересно!"**
-3.  Each word (**Я**, **учу**, **Java**, **Это**, **интересно**) must be output using a separate command (`print` or `println`).
+1.  Print the first phrase: **"I'm learning Java."**
+2.  Print the second phrase: **"This is interesting!"**
+3.  Each word (**I'm**, **learning**, **Java**, **This is**, **interesting!**) must be output using a separate command (`print` or `println`).
 4.  The final result must display exactly **two lines** of text.
 5.  Strictly follow the order of words and punctuation as specified in the task.
 
@@ -19,15 +19,21 @@ The application must satisfy the following criteria:
 ## 💻 Implementation Detail
 The project uses `System.out.print()` to keep the cursor on the same line for assembling a phrase, and `System.out.println()` to terminate the line and move to the next one. This illustrates how Java handles the standard output buffer.
 
+## 📋 Expected result
+```text
+I'm learning Java.
+This is interesting!
+```
+
 ```java
 public class Task_2_App {
     public static void main(String[] args) {
-        System.out.print("Я");
-        System.out.print(" учу");
+        System.out.print("I'm");
+        System.out.print(" learning");
         System.out.println(" Java.");
 
-        System.out.print("Это");
-        System.out.println(" интересно!");
+        System.out.print("This is");
+        System.out.println(" interesting!");
     }
 }
 ```
